@@ -1,4 +1,6 @@
-
+/* 
+* Dzongkhag Table
+*/
 create table dzongkhag(
 	id int(11)  unsigned auto_increment primary key,
 	dzongkhag varchar(50) not null 
@@ -24,6 +26,33 @@ INSERT INTO `dzongkhag` (`id`, `dzongkhag`) VALUES('17','Trongsa');
 INSERT INTO `dzongkhag` (`id`, `dzongkhag`) VALUES('18','Tsirang');
 INSERT INTO `dzongkhag` (`id`, `dzongkhag`) VALUES('19','Wangdue Phodrang');
 INSERT INTO `dzongkhag` (`id`, `dzongkhag`) VALUES('20','Zhemgang');
+
+/* 
+* Gewog Table
+*/
+CREATE TABLE gewog (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+gewog VARCHAR(100) NOT NULL,
+dzongkhag_id	INT(11) NOT NULL
+);
+
+insert into `gewog` (`id`, `gewog` ,`dzongkhag_id`) values('1','Bjachho', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('2','Chhume', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('3','Tang', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('4','Ura', '2');
+insert into `gewog` (`id`, `gewog` ,`dzongkhag_id`) values('5','Bjachho', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('6','Bongo', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('7','Chapcha', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('8','Darla', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('9','Dungna', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('10','Geling', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('11','Getana', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('12','Lokchina', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('13','Metakha', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('14','Phuntsholing', '2');
+insert into `gewog` (`id`, `gewog`, `dzongkhag_id`) values('15','Sampheling', '2');
+
+
 
 
 
